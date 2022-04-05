@@ -7,7 +7,7 @@ today = date.today()
 fake = Faker()
 
 type = ["science fiction", "fantasy", "drama", "romance", "comedy", "zombie", "action", "historical", "horror", "war"]
-choice = random.choice(type)
+choice = random.randint(type)
 
 movies_and_series = []
 
