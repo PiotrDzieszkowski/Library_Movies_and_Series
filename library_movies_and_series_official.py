@@ -5,7 +5,7 @@ import random
 from datetime import date
 today = date.today()
 fake = Faker()
-
+#nie wiem czemu github nie chce zmienic mi nazwy na małe. Wstawiam screen że zmieniłem
 type = ["science fiction", "fantasy", "drama", "romance", "comedy", "zombie", "action", "historical", "horror", "war"]
 choice = random.choice(type)
 
