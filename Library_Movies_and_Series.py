@@ -39,7 +39,7 @@ def create_library(number_of):
     movies_and_series = []
     for n in range(number_of):
         #zapomniałem jak z listy wybrać dowolne słowo
-        movie = Movie(title=fake.word().title(), year=fake.year(), type= choice, watched=fake.random_int(0,20))
+        movie = Movie(title=fake.word().title(), year=fake.year(), type=random.choice(type), watched=fake.random_int(0,20))
         movies_and_series.append(movie)   
     for n in range(number_of):
         series = Series(title=fake.word().title(), year=fake.year(), type=fake.word(), watched=fake.random_int(0,20), episode=fake.random_int(1,20), season=fake.random_digit_not_null())
@@ -134,7 +134,7 @@ while True:
         if genre_type == "M":
             for n in range(quantity):
                 fake = Faker()
-                contact = Movie(title=fake.word().title(), year=fake.year(), type= choice, watched=fake.random_int(0,20))
+                contact = Movie(title=fake.word().title(), year=fake.year(), type=random.choice(type), watched=fake.random_int(0,20))
                 contacts.append(contact)
         if genre_type == "S":
             for n in range(quantity):
